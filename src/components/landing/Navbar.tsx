@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <>
             <div className='w-full'  >
-                <div className='flex justify-between  bg-black min-h-10 my-5 p-0.5 px-20'>
+                <div className='flex justify-between  bg-black min-h-10 my-5 p-0.5  lg:px-20 py-5'>
 
 
                     <div className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
