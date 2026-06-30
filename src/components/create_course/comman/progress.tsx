@@ -5,47 +5,47 @@ const courseCreationSteps = [
         title: "Basic Info",
         icon: "ri-file-list-3-line",
         completed: true,
-        active: true
+        active: false
     },
     {
         id: 2,
         title: "Day-wise Content",
         icon: "ri-calendar-check-line",
-        completed: false,
+        completed: true,
         active: false
     },
     {
         id: 3,
-        title: "Assignments",
-        icon: "ri-edit-box-line",
+        title: "Widgets",
+        icon: "ri-flashlight-line",
         completed: false,
-        active: false
+        active: true
     },
     {
         id: 4,
-        title: "Quizzes",
-        icon: "ri-questionnaire-line",
+        title: "Gamification",
+        icon: "ri-gamepad-line",
         completed: false,
         active: false
     },
     {
         id: 5,
-        title: "Live Sessions",
-        icon: "ri-live-line",
+        title: "Badges",
+        icon: "ri-medal-line",
         completed: false,
         active: false
     },
     {
         id: 6,
-        title: "Widgets",
-        icon: "ri-flashlight-line",
+        title: "Pricing",
+        icon: "ri-price-tag-3-line",
         completed: false,
         active: false
     },
     {
         id: 7,
-        title: "Publish",
-        icon: "ri-trophy-line",
+        title: "Preview",
+        icon: "ri-play-circle-line",
         completed: false,
         active: false
     }
@@ -76,8 +76,8 @@ const progress = ({ data }: keeping) => {
                                 
                             py-2 px-4 mx-4 rounded-2xl ${active ? " bg-neon-green" : completed ? "bg-neon-green/30 text-neon-green" :
                                         " text-card-font bg-[#161A13]"}`}>
-                                    {completed ?(<i className="ri-check-line"></i>) :(<i className={step.icon}></i>)}        
-           
+                                    {completed ? (<i className="ri-check-line"></i>) : (<i className={step.icon}></i>)}
+
                                     <span>{step.title}</span>
 
 

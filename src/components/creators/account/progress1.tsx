@@ -4,70 +4,68 @@ const progress1 = () => {
     return (
         <div>
 
-            <div className="w-[520px] rounded-2xl border border-lime-400/20 bg-[#0B0F08] p-8 shadow-lg">
-                {/* Header */}
-                <div>
-                    <h2 className="text-4xl font-bold text-white">
-                        Account information
-                    </h2>
 
-                    <p className="mt-2 text-zinc-400">
+            <div className="w-auto rounded-3xl border border-lime-500/20 mt-5 px-5 py-10 bg-[#090d08]  font-sans">
+
+                <div>
+                    <p className="text-4xl font-bold text-white font-heading">
+                        Account information
+                    </p>
+
+                    <p className="mt-2 text-card-font font-heading">
                         We'll use this to set up your login.
                     </p>
                 </div>
 
-                {/* Form */}
-                <div className="mt-10 grid grid-cols-2 gap-5">
-                    {/* Full Name */}
-                    <div>
-                        <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-zinc-500">
+                <div className="mt-10 grid grid-cols-2 gap-5  font-sans text-card-font">
+
+                    <div >
+                        <label className="mb-2 block text-xs text-white font-medium uppercase tracking-wider">
                             Full Name
                         </label>
-
                         <input
                             type="text"
-                            defaultValue="Aarav Mehta"
-                            className="h-12 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
+                            placeholder="Rohit"
+                            className="p-3 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
                         />
                     </div>
 
-                    {/* Email */}
                     <div>
-                        <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-zinc-500">
+                        <label className="mb-2 block text-xs font-medium uppercase text-white tracking-wider ">
                             Email
                         </label>
 
                         <input
                             type="email"
-                            defaultValue="aarav@tradeved.in"
-                            className="h-12 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
+                            placeholder="rohit@tradeved.in"
+                            className="p-3 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
                         />
                     </div>
 
-                    {/* Phone */}
+
                     <div>
-                        <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-zinc-500">
+                        <label className="mb-2 block text-xs font-medium text-white uppercase tracking-wider">
                             Phone
                         </label>
 
                         <input
                             type="text"
-                            defaultValue="+91 98765 43210"
-                            className="h-12 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
+                            placeholder="+91 xxxxxxxxxx"
+                            className="p-3 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 text-white outline-none transition focus:border-lime-400"
                         />
                     </div>
 
-                    {/* Password */}
-                    <div>
-                        <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-zinc-500">
+
+                    <div className=''>
+                        <label className="mb-2 block text-xs font-medium text-white uppercase tracking-wider ">
                             Password
                         </label>
 
                         <div className="relative">
                             <input
                                 type="password"
-                                defaultValue="password123"
-                                className="h-12 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 pr-12 text-white outline-none transition focus:border-lime-400"
+                                placeholder="Password123"
+                                className="p-3 w-full rounded-lg border border-zinc-700 bg-zinc-900 px-4 pr-12 text-white outline-none transition focus:border-lime-400"
                             />
 
                             <button
@@ -80,16 +78,8 @@ const progress1 = () => {
                     </div>
                 </div>
 
-                {/* Footer */}
-                <div className="mt-10 flex items-center justify-between">
-                    <button className="text-zinc-400 transition hover:text-white">
-                        ← Back
-                    </button>
 
-                    <button className="rounded-full bg-lime-400 px-8 py-3 font-semibold text-black transition hover:scale-105">
-                        Continue →
-                    </button>
-                </div>
+
             </div>
 
         </div>

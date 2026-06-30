@@ -31,22 +31,27 @@ import { redirect } from 'next/navigation'
 
 
 const page = () => {
-  const[dashboard,setDashboard] = useState('Course Library') 
+  const [dashboard, setDashboard] = useState('Course Library')
   return (
     <div>
+
       <Navbar />
-      <Starting/>
-      <Right/>
-      <Fullgamified/> 
-      <Leader/>
-      <Learning/>
-      <Zero/>
-      <Refund/>
-      <Why/>
-      <Community/>
-      <Frequently/>
-      <Start/>
-      <Footer />   
+
+      <Starting />
+      <Right />
+      <Fullgamified />
+      <Leader />
+      <Learning />
+      <Zero />
+      <Refund />
+      <Why />
+      <Community />
+      <Frequently />
+      <div className=' p-20'>
+        <Start />
+
+      </div>
+      <Footer />
     </div>
   )
 }

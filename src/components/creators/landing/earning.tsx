@@ -7,7 +7,40 @@ const features = [
   "Bundles, drip & cohort pricing",
   "Affiliate program built-in",
 ];
-
+const earningsData = {
+  "3M": [
+    { month: "Jan", earnings: 120000 },
+    { month: "Feb", earnings: 145000 },
+    { month: "Mar", earnings: 180000 },
+  ],
+  "6M": [
+    { month: "Jan", earnings: 120000 },
+    { month: "Feb", earnings: 145000 },
+    { month: "Mar", earnings: 180000 },
+    { month: "Apr", earnings: 210000 },
+    { month: "May", earnings: 240000 },
+    { month: "Jun", earnings: 255400 },
+  ],
+  "1Y": [
+    { month: "Jan", earnings: 120000 },
+    { month: "Feb", earnings: 145000 },
+    { month: "Mar", earnings: 138000 },
+    { month: "Apr", earnings: 180000 },
+    { month: "May", earnings: 195000 },
+    { month: "Jun", earnings: 190000 },
+    { month: "Jul", earnings: 225000 },
+    { month: "Aug", earnings: 255000 },
+    { month: "Sep", earnings: 248000 },
+    { month: "Oct", earnings: 300000 },
+    { month: "Nov", earnings: 350000 },
+    { month: "Dec", earnings: 405000 },
+  ],
+};
+import {
+  AreaChart,
+  Area,
+  ResponsiveContainer,
+} from "recharts";
 function ThreeMonthData() {
   return (
     <div className="mt-6">
@@ -56,6 +89,7 @@ const earning = () => {
   const [activeTab, setActiveTab] = useState("1Y");
   const ActiveComponent =
     tabs.find((tab) => tab.id === activeTab)?.component;
+  const [range, setRange] = useState<"3M" | "6M" | "1Y">("1Y");
   return (
     <>
       <div className='w-auto mx-20 mt-20 bg-[#080C00] rounded-2xl flex  '>
@@ -90,21 +124,109 @@ const earning = () => {
             </div>
           </div>
         </div>
-        <div className='w-[50%]'>
-          {/* <div>
-            {tabs.map((element) => (
-              <button key={element.id}
-                onClick={() => setActiveTab(element.id)} className=' text-2xl text-amber-50 flex gap-5'>
-                {element.label}
+        <div className='w-[50%] p-10 font-heading '>
+          <div className="rounded-3xl border border-zinc-800  p-6">
 
-              </button>
+            <div className="mb-8 flex items-start justify-between">
 
-            ))};
+              <div>
+                <p className="text-sm text-card-font">
+                  Projected monthly earnings
+                </p>
+
+                <h2 className="mt-2 text-3xl font-bold text-neon-green font-sans">
+                  ₹2,55,400
+                </h2>
+              </div>
+
+              <div className="flex gap-2 font-sans">
+                {["3M", "6M", "1Y"].map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => setRange(item as "3M" | "6M" | "1Y")}
+                    className={`rounded-xl px-4 py-2 text-sm font-medium transition
+                    ${range === item
+                        ? "bg-neon-green text-black"
+                        : "border border-zinc-700 text-white"
+                      }`}
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
+
+            </div>
+
+            <div className="h-40">
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart data={earningsData[range]}>
+                  <defs>
+                    <linearGradient
+                      id="earnings"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
+                      <stop
+                        offset="0%"
+                        stopColor="#A6FF00"
+                        stopOpacity={0.35}
+                      />
+                      <stop
+                        offset="100%"
+                        stopColor="#A6FF00"
+                        stopOpacity={0}
+                      />
+                    </linearGradient>
+                  </defs>
+
+                  <Area
+                    type="monotone"
+                    dataKey="earnings"
+                    stroke="#A6FF00"
+                    strokeWidth={3}
+                    fill="url(#earnings)"
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="mt-6 grid grid-cols-3 gap-4 font-sans">
+
+              <div className="rounded-2xl border border-zinc-800 bg-black/20 p-4">
+                <p className="text-xs uppercase tracking-wider text-card-font">
+                  Students
+                </p>
+
+                <p className="mt-2 text-3xl font-bold text-white">
+                  1,248
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-800 bg-black/20 p-4">
+                <p className="text-xs uppercase tracking-wider text-card-font">
+                  Avg. Price
+                </p>
+
+                <p className="mt-2 text-3xl font-bold text-white">
+                  ₹2,499
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-zinc-800 bg-black/20 p-4">
+                <p className="text-xs uppercase tracking-wider text-card-font">
+                  Conversion
+                </p>
+
+                <p className="mt-2 text-3xl font-bold text-white">
+                  8.4%
+                </p>
+              </div>
+
+            </div>
+
           </div>
-          <div key={activeTab}>
-            <ActiveComponent />
-          </div> */}
-
 
 
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navbar = () => {
     return (
@@ -27,11 +28,11 @@ const navbar = () => {
                   border-neon-green  '>
                         Sign in
                     </button>
-                    <button className='bg-neon-green text-black px-10 py-1 rounded-xl
+                    <Link href={"/creators/account_setup"} className='bg-neon-green text-black px-10 py-1 rounded-xl
                      font-semibold gap-2 flex items-center justify-center align-middle '>
                         Become a creator
                         <i className="ri-arrow-right-line text-lg"></i>
-                    </button>
+                    </Link>
 
                 </div>
                 <div className='flex min-[900]:hidden bg-transparent '>

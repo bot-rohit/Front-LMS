@@ -4,6 +4,7 @@ import "./globals.css";
 import { Open_Sans, Raleway } from "next/font/google";
 import 'remixicon/fonts/remixicon.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { ToastContainer, toast } from 'react-toastify';
 
 const openSans = Open_Sans({
   subsets: ["latin"],

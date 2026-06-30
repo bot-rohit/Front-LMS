@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-
+const supportCard = {
+    title: "Need help?",
+    subtitle: "Contact TraderStop Support",
+};
 const Footer = () => {
     return (
 
@@ -27,7 +30,7 @@ const Footer = () => {
 
                             </div>
                         </div>
-                         <div className='flex flex-col gap-4'>
+                        <div className='flex flex-col gap-4'>
                             <p className='font-sans text-white font-semibold text-base '>Platform</p>
                             <ul className='text-gray-400 text-sm flex flex-col gap-2'>
                                 <li><a href='#'>All Courses</a></li>
@@ -48,24 +51,31 @@ const Footer = () => {
 
 
                         <div className='flex flex-col  gap-4 align-middle px-[6vw]'>
-                            <p className='font-sans font-semibold text-white text-base'>Newsletter</p>
+                           
 
 
-                            <form className='flex  gap-2'>
-                                <input type="email" placeholder='Email Address'
-                                    className='bg-neon-green w-48 h-8 rounded-sm px-2 text-sm 
-                                      text-black ' />
+                            <div className="overflow-hidden rounded-2xl border border-[#232b1a] bg-gradient-to-r
+                             from-[#1a1d14] via-[#23251b] to-[#1a1d14] p-5">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#5b1e3f]">
+                                        <i className="ri-customer-service-2-line text-2xl text-[#FFB6D5]"></i>
+                                    </div>
 
-                                <button className='flex h-8 w-8 justify-center items-center align-middle bg-[#CC0066]  rounded-sm placeholder:"Email Address" text-sm font-medium '>
-                                    <Image src="/assets/Footer/right-arrow.png" alt="send" width={20} height={20} />
-                                </button>
+                                    <div>
+                                        <h3 className="text-md font-bold text-[#E8E8DD]">
+                                            {supportCard.title}
+                                        </h3>
 
-
-                            </form>
+                                        <p className="mt-1 text-sm text-[#C8C8BA]">
+                                            {supportCard.subtitle}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
 
                         </div>
-                       
+
                     </div>
 
 

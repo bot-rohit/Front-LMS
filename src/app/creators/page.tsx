@@ -9,19 +9,27 @@ import Loved from '@/components/creators/landing/loved'
 import Footer from '@/components/creators/landing/footer'
 import Setup from '@/components/creators/account/setup'
 import Beforever from '@/components/creators/beforever/landing'
+import Header from '@/components/creators/profile/header'
+import First from '@/components/creators/profile/first'
+import Second from '@/components/creators/profile/second'
+import Third from '@/components/creators/profile/third'
 
 const page = () => {
   return (
     <>
-    {/* <Navbar/>
+    <Navbar/>
     <Createsell />
     <Whytrade />
     <How/>
     <Earning/>
     <Loved/>
-    <Footer/> */}
+    <Footer/>
     {/* <Setup/> */}
     {/* <Beforever/> */}
+    {/* <Header/> */}
+    {/* <First/> */}
+    {/* <Second/> */}
+    {/* <Third/> */}
     
 
     </>

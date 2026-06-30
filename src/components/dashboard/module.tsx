@@ -3,14 +3,15 @@ import React from 'react'
 const module = () => {
     return (
         <>
-            <div className="relative overflow-hidden rounded-[32px] border border-[#2A330F] bg-[#1C2117] p-12">
-                {/* Background Glow */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(163,255,0,0.12),transparent_45%)]" />
+            <div className="  w-auto rounded-2xl ml-5 mt-20 px-10 py-20 font-heading
+              bg-[#1A1D18]
+    bg-[radial-gradient(circle_at_top_right,rgba(166,255,0,0.18),transparent_40%),linear-gradient(90deg,#1A1D18_0%,#252822_50%,#1A1D18_100%)]">
 
-                <div className="relative z-10">
-                    {/* Header */}
-                    <div className="flex items-center gap-5">
-                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#394126] bg-[#252B1E]">
+
+
+                <div className="">
+                    <div className="flex items-center gap-4">
+                        <div className="flex p-2 items-center justify-center rounded-2xl bg-[#252B1E]">
                             <svg
                                 width="24"
                                 height="24"
@@ -26,40 +27,38 @@ const module = () => {
                                 />
                             </svg>
                         </div>
-
-                        <span className="text-lg font-medium tracking-[0.2em] text-[#C8C9BD]">
+                        <span className="text-sm font-medium text-card-font">
                             CURRENT MODULE
                         </span>
                     </div>
 
-                    {/* Content */}
-                    <div className="mt-10">
-                        <h2 className="text-6xl font-bold text-[#E7E7DE]">
+                    <div className="mt-8">
+                        <p className="text-3xl font-bold text-white">
                             Technical Analysis III
-                        </h2>
+                        </p>
 
-                        <p className="mt-6 max-w-xl text-2xl leading-relaxed text-[#C4C4B9]">
+                        <p className="mt-3  text-sm  text-[#C4C4B9]">
                             Advanced harmonic patterns and multi-timeframe correlation
                             strategies for intraday swings.
                         </p>
                     </div>
 
-                    {/* Progress */}
-                    <div className="mt-16 flex items-end justify-between">
-                        <span className="text-8xl font-bold text-[#A7F000]">78%</span>
 
-                        <span className="text-xl font-medium tracking-wide text-[#D4D4C8]">
+                    <div className="mt-8 flex items-end justify-between font-sans">
+                        <span className="text-4xl font-bold text-neon-green">78%</span>
+
+                        <span className="text-sm font-medium tracking-wide text-white">
                             3 LESSONS LEFT
                         </span>
                     </div>
 
-                    {/* Progress Bar */}
-                    <div className="mt-5 h-4 overflow-hidden rounded-full bg-black/70">
-                        <div className="h-full w-[78%] rounded-full bg-[#A7F000]" />
+                    <div className="mt-2 h-3 overflow-hidden rounded-full bg-black/70">
+                        <div className="h-full w-[78%] rounded-full bg-neon-green" />
                     </div>
 
-                    {/* Button */}
-                    <button className="mt-14 w-full rounded-[24px] bg-[#30352A] py-8 text-3xl font-semibold text-[#F2F2EA] transition hover:bg-[#393F33]">
+
+                    <button className="mt-8 w-full rounded-2xl bg-[#30352A] py-3 text-md font-semibold text-[#F2F2EA] 
+                    transition hover:bg-[#393F33]">
                         Continue Lesson
                     </button>
                 </div>

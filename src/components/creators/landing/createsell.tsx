@@ -86,6 +86,39 @@ const createsell = () => {
                                 className="object-cover rounded-4xl"
                             />
                         </div>
+                        <div className='absolute z-1 top-10 -left-8'>
+                
+                            <div className="rounded-3xl border border-neon-green/10 bg-card-page/95 px-6 py-5 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+                                <p className="text-xs uppercase tracking-[0.15em] text-card-font">
+                                    This Month
+                                </p>
+
+                                <h3 className="mt-2 text-2xl font-bold text-neon-green font-heading font-sans">
+                                    +₹84,200
+                                </h3>
+                            </div>
+
+                        </div>
+                        <div className='absolute z-2 bottom-10 -right-10 w-fit'>
+          
+                            <div className="rounded-3xl border border-neon-green/10 bg-card-page/95 px-6 py-5 
+                            backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+                                <p className="text-xs uppercase tracking-[0.15em] text-card-font">
+                                    New Students
+                                </p>
+
+                                <div className="mt-2 flex items-center gap-3">
+                                    <h3 className="text-2xl font-bold text-white font-heading font-sans">
+                                        312
+                                    </h3>
+
+                                    <div className="flex items-center text-neon-green">
+                                        <i className="ri-arrow-right-up-line text-xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 

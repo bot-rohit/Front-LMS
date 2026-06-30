@@ -78,24 +78,24 @@ const Start = () => {
 
 
                 </div>
-                <div className='w-[50%] relative h-auto overflow-hidden   '>
+                <div className='w-[50%] relative h-auto    '>
 
 
-                    <div className=' absolute min-h-100 px-20 pt-20 pb-10 z-1 
+                    <div className=' absolute min-h-100 px-20 pt-20 pb-10 z-1  border-2 rounded-2xl
                     // bg-[radial-gradient(circle_at_center,rgba(124,255,0,0.18)_0%,rgba(124,255,0,0.08)_35%,rgba(0,0,0,0.95)_75%)]
                     bg-[radial-gradient(circle_at_30%_40%,rgba(140,255,0,0.16)_0%,rgba(124,255,0,0.07)_35%,rgba(0,0,0,0.78)_100%)]
                     '>
                         <Graph />
                     </div>
-                    <div className=' absolute z-5 items-end right-0 scale-75 origin-top-right backdrop-blur-xl'>
+                    <div className=' absolute z-5 items-end -right-4 scale-75 pb-10 -top-10 origin-top-right backdrop-blur-xl'>
                         <Seats/>
 
                     </div>
-                    <div className='absolute z-3 right-5 pt-120  scale-75 origin-top-right'>
+                    <div className='absolute z-3 -right-8 bottom-4  scale-75 origin-top-right backdrop-blur-xl '>
 
                         <Streak/>
                     </div>
-                    <div className='absolute z-4 left-0 pt-120  scale-75 origin-top-right '>
+                    <div className='absolute z-4 left-0 bottom-0 backdrop-blur-xl   scale-75 origin-top-right  '>
                         <Leaderboard/>
                     </div>
                 </div>

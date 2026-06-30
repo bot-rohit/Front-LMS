@@ -37,24 +37,20 @@ const progress3 = () => {
 
     return (
         <div>
-            <div className="w-full max-w-3xl rounded-3xl border border-lime-500/20 bg-[#090d08] p-8">
-                {/* Header */}
+            <div className="w-auto font-heading rounded-3xl border border-lime-500/20 bg-[#090d08] p-8 text-card-font">
                 <div>
-                    <h2 className="text-5xl font-bold text-white">
+                    <p className="text-3xl font-bold text-white">
                         Your expertise
-                    </h2>
-
-                    <p className="mt-3 text-xl text-zinc-400">
+                    </p>
+                    <p className="mt-2 text-md ">
                         Helps us match you with the right learners.
                     </p>
                 </div>
 
-                {/* Experience */}
-                <div className="mt-12">
-                    <p className="mb-5 text-sm font-medium uppercase tracking-wider text-zinc-400">
+                <div className="mt-10">
+                    <p className="mb-5 text-sm font-medium uppercase tracking-wider ">
                         Experience Level
                     </p>
-
                     <div className="grid grid-cols-3 gap-4">
                         {experienceLevels.map((level) => {
                             const active = selectedExperience === level;
@@ -64,7 +60,7 @@ const progress3 = () => {
                                     key={level}
                                     onClick={() => setSelectedExperience(level)}
                                     className={`
-                  h-16 rounded-xl border text-lg font-semibold
+                  py-4 rounded-xl border text-lg font-semibold
                   transition-all duration-300
                   ${active
                                             ? "border-lime-400 text-lime-400 shadow-[0_0_15px_rgba(163,230,53,0.25)]"
@@ -79,9 +75,9 @@ const progress3 = () => {
                     </div>
                 </div>
 
-                {/* Categories */}
+
                 <div className="mt-10">
-                    <p className="mb-5 text-sm font-medium uppercase tracking-wider text-zinc-400">
+                    <p className="mb-5 text-sm font-medium uppercase tracking-wider ">
                         Categories You Teach
                     </p>
 
@@ -96,7 +92,7 @@ const progress3 = () => {
                                     onClick={() => toggleCategory(category)}
                                     className={`
                   rounded-full border px-5 py-2.5
-                  text-base font-medium
+                  text-md font-medium
                   transition-all duration-300
                   ${active
                                             ? "border-lime-400 bg-lime-400/10 text-lime-400"

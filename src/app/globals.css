@@ -4,10 +4,10 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-@theme {
-  --font-sans: var(--font-open-sans);
-  --font-heading: var(--font-raleway);
-}
+  @theme {
+    --font-sans: var(--font-open-sans);
+    --font-heading: var(--font-raleway);
+  }
 @theme{
   --color-neon-green: #98EB00;
 }
@@ -31,8 +31,18 @@
 @theme{
   --color-card-white:#F1F5F9;
 }
+@theme{
+  --color-dark-no:#22C55E;
 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 
 body {
@@ -40,4 +50,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   background: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0B1203 inset !important;
+  box-shadow: 0 0 0px 1000px #0B1203 inset !important;
+  caret-color: #ffffff !important;
 }
