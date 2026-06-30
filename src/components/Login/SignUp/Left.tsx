@@ -35,7 +35,7 @@ const Left = ({ formdata, handle, submit, error, accept, load }: coming) => {
 
     return (
         <div>
-            <form className="w-full  flex items-center justify-center font-heading "
+            <form className="w-full flex items-center justify-center font-heading "
 
                 noValidate
                 onSubmit={(e) => {

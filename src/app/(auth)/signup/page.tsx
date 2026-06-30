@@ -14,12 +14,12 @@ const page = () => {
     return (
         <>
             <div className='flex h-screen'>
-                <div className='w-[50%] py-17 pl-20 scale-90  origin-top-left '>
+                <div className='lg:w-[50%] w-full py-17 lg:pl-20 p-5 lg:scale-90   origin-top-left '>
                     <SuRight formdata={signup.formData} handle={signup.handleChange} submit={signup.handleSubmit}
                         accept={signup.setAcceptedTerms}
                         error={signup.errors} load={signup.loading} />
                 </div>
-                <div className='w-[50%] py-17 px-20 bg-[#14180D]'>
+                <div className='lg:w-[50%] lg:flex hidden  py-17 lg:px-20 bg-[#14180D]'>
                     <SuLeft />
                 </div>
 

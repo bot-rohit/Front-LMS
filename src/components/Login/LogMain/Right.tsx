@@ -27,7 +27,7 @@ const Right = ({ data, change, submit, load, error }: coming) => {
         <>
 
             <div className='flex gap-5'>
-                <div className='w-[50%] font-heading h-screen flex flex-col justify-center align-middle items-start p-20'>
+                <div className='lg:w-[50%] w-full font-heading h-screen lg:flex lg:flex-col hidden justify-center align-middle items-start p-20'>
                     <div className='flex justify-center gap-3 font-heading text-xl font-semibold items-center '>
                         <Image src="/assets/Nav/logo.png" alt="logo" width={35} height={20} />
                         <p className='text-white'>TradeVed</p>
@@ -48,7 +48,7 @@ const Right = ({ data, change, submit, load, error }: coming) => {
 
 
                 </div>
-                <div className='w-[50%] font-heading px-20 flex flex-col justify-center align-middle pt-20 bg-[#14180D] h-screen'>
+                <div className='lg:w-[50%] w-full font-heading lg:px-20 px-5 flex flex-col justify-center align-middle lg:pt-20 bg-[#14180D] h-screen'>
                     <div className="text-center">
                         <p className="text-white text-3xl font-semibold pb-3">
                             Login

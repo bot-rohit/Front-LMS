@@ -3,7 +3,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
+import { useState } from "react";
+
 const Navbar = () => {
+    const [open, setOpen] = useState(false);
     return (
         <>
             <div className='w-full'  >
@@ -36,11 +40,37 @@ const Navbar = () => {
                         </Link>
 
                     </div>
-                    <div className='flex min-[900]:hidden bg-transparent '>
-                        < i className="ri-menu-line text-white text-4xl " ></i>
+                    <div className="flex min-[900px]:hidden w-auto">
+                        {!open ? (
+                            <button onClick={() => setOpen(true)}>
+                                <i className="ri-menu-line text-white text-4xl"></i>
+                            </button>
+                        ) : (
+                            <div className="fixed inset-0 z-50 w-auto bg-[#0E0E0E]">
+                                <div className="flex justify-end p-6">
+                                    <button onClick={() => setOpen(false)}>
+                                        <i className="ri-close-line text-white text-4xl"></i>
+                                    </button>
+                                </div>
 
+                                <div className="flex h-[calc(100%-80px)] flex-col items-center justify-center gap-6 px-6">
+                                    <Link
+                                        href="/login"
+                                        className="flex w-full max-w-xs items-center justify-center rounded-xl border border-card-page py-4 text-white transition hover:bg-white/10"
+                                    >
+                                        Login
+                                    </Link>
+
+                                    <Link
+                                        href="/signup"
+                                        className="flex w-full max-w-xs items-center justify-center rounded-xl bg-neon-green py-4 font-semibold text-black transition hover:opacity-90"
+                                    >
+                                        Sign Up
+                                    </Link>
+                                </div>
+                            </div>
+                        )}
                     </div>
-
                 </div>
             </div>
             <hr className='border-1  border-neon-green' />

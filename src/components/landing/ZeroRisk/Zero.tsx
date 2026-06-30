@@ -46,7 +46,7 @@ const Zero = () => {
                             <p className='text-card-head'>Here's How You Will </p>
                             <p className='text-neon-green'> Learn for Free</p>
                         </div>
-                        <div className=' flex flex-col lg:items-center items-start pl-6 lg:p-0 lg:mb-0 mb-5'>
+                        <div className=' flex flex-col lg:font-md font-sm  lg:items-center items-start pl-6 lg:p-0 lg:mb-0 mb-5'>
 
 
                             <p className='text-card-font'>A streamlined, performance-driven path designed to transform beginners into</p>
