@@ -16,7 +16,7 @@ const faqData = [
     },
 
     {
-        question: "How do I earn points?",
+        question: "How do I earn more on daily basis points?",
         answer:
             "You earn points by completing lessons, quizzes, and participating in activities."
     }

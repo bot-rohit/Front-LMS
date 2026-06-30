@@ -19,7 +19,7 @@ const Card = ({ send }: format) => {
                 <div className='w-full'>
                     <button onClick={() => setClicked(!clicked)} className='flex justify-between w-full'>
 
-                        <p className={`font-bold ${!clicked ? "text-neon-green" :"text-card-head"}`}>{send.question}</p>
+                        <p className={`font-bold  ${!clicked ? "text-neon-green" :"text-card-head"}`}>{send.question}</p>
 
                         {/* { !clicked && <i className="ri-arrow-down-s-line"></i>
                         {clicked && <i className="ri-arrow-up-s-line"></i>} */}
