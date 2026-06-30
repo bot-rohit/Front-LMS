@@ -100,7 +100,7 @@ const graph = () => {
                     strokeWidth="1.5"
                     fill="none"
                     strokeLinecap="round"
-                    stroke="url(#lineGradient)"
+
                     style={{
                         filter: "url(#glow)"
                     }}
