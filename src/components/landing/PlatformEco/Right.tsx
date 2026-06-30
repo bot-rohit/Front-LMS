@@ -26,7 +26,7 @@ const features = [
 
 const right = () => {
     return (
-        <div className='flex flex-col text-white  bg-[#080C00] px-8 pt-20 rounded-2xl gap-2 mx-20  mt-20 pb-10'>
+        <div className='flex flex-col text-white  bg-[#080C00] pt-20 rounded-2xl gap-2 mx-20  mt-20 pb-10 px-4 sm:px-8 lg:px-8  lg:pt-20'>
             <div className='font-heading font-bold text-3xl'>
                 <p>Platform Ecosystem</p>
             </div>
@@ -35,7 +35,7 @@ const right = () => {
                     <Left />
 
                 </div>
-                <div className='flex-1 flex flex-col gap-5  '>
+                <div className='lg:flex-1 lg:flex flex-col gap-5 hidden  '>
                     {features.map((element) => (
 
                         <div key={element.description}>

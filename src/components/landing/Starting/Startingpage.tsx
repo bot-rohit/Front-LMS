@@ -28,8 +28,8 @@ const benefitsData = [
 const Start = () => {
     return (
         <>
-            <div className=' flex px-20 pt-20 h-full gap-20  '>
-                <div className='w-[50%]'>
+            <div className=' flex gap-10 lg:gap-20 px-4 sm:px-8 lg:px-20 pt-12 lg:pt-20'>
+                <div className='w-full lg:flex-1'>
 
                     <div className='flex flex-col gap-5 pr-5 font-heading'>
                         <div className='text-xs flex justify-star align-middle gap-1  items-center border-2 px-2 rounded-xl py-1 border-[#2A4100] bg-[#0A1600] w-fit'>
@@ -78,7 +78,7 @@ const Start = () => {
 
 
                 </div>
-                <div className='w-[50%] relative h-auto    '>
+                <div className='w-full lg:flex-1 relative hidden lg:flex  '>
 
 
                     <div className=' absolute min-h-100 px-20 pt-20 pb-10 z-1  border-2 rounded-2xl

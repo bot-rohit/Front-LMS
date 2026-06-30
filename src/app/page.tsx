@@ -39,7 +39,7 @@ const page = () => {
 
       <Starting />
       <Right />
-      <Fullgamified />
+      {/* <Fullgamified />
       <Leader />
       <Learning />
       <Zero />
@@ -51,7 +51,7 @@ const page = () => {
         <Start />
 
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
