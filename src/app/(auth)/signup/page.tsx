@@ -14,7 +14,7 @@ const page = () => {
     return (
         <>
             <div className='flex h-screen'>
-                <div className='lg:w-[50%] w-full py-17 lg:pl-20 p-5 lg:scale-90   origin-top-left '>
+                <div className='lg:w-[50%] w-full py-17 lg:pl-20 p-5 lg:scale-90 lg:pb-0 pb-10    origin-top-left '>
                     <SuRight formdata={signup.formData} handle={signup.handleChange} submit={signup.handleSubmit}
                         accept={signup.setAcceptedTerms}
                         error={signup.errors} load={signup.loading} />

@@ -16,12 +16,12 @@ const Reset = ({data , func}:coming) => {
     console.log(data)
     return (
         <>
-            <div className='flex flex-col px-20  py-20 gap-15'>
+            <div className='flex flex-col lg:px-20 px-4 py-20 gap-15'>
                 <div className="flex flex-col gap-4">
                     <p className="text-neon-green uppercase tracking-[0.20em] text-sm font-medium">
                         Security Protocol
                     </p>
-                    <h1 className="text-5xl font-bold leading-none">
+                    <h1 className="lg:text-5xl text-3xl font-bold leading-none">
                         <span className="text-white">Forgot </span>
                         <span className="text-neon-green">Password?</span>
                     </h1>
