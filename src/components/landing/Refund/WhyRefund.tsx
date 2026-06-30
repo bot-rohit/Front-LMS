@@ -61,7 +61,7 @@ const WhyRefund = () => {
                                 <Image src={'/assets/Landing/Mentor.png'} alt='img' height={200} width={200}
                                     className=' absolute z-1
                                                 border-2 border-card-page rounded-2xl w-xl p-5 object-cover opacity-100 '/>
-                                <div className=' absolute z-2 lg:mt-60 mt-40 px-2 py-1 gap-2 rounded-full bg-red-given flex justify-center align-middle items-center'>
+                                <div className=' absolute z-2 lg:mt-60 mt-33 px-2 py-1 gap-2 rounded-full bg-red-given flex justify-center align-middle items-center'>
                                     <i className="bi bi-play-fill text-neon-green text-2xl "></i>
                                     <p>Watch Explainer</p>
 

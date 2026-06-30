@@ -38,7 +38,7 @@ const Leader = () => {
                         <div className=' flex items-end gap-5'>
                             <div className='flex flex-col items-center gap-3'>
                                 <div className='rounded-full border-4 border-neon-green p-1 size-18'>
-                                    <img src='/assets/nav/person.png' className='w-full h-full rounded-full object-cover' />
+                                    <img src='/assets/Nav/person.png' className='w-full h-full rounded-full object-cover' />
                                 </div>
                                 <div className='px-7 py-13 rounded-t-3xl bg-[#2D3128] flex items-center justify-center text-white text-4xl font-bold'>
                                     2
@@ -51,7 +51,7 @@ const Leader = () => {
                                     </div>
                                 </div>
                                 <div className=' rounded-full border-4 border-neon-green p-1'>
-                                    <img src='/assets/nav/person.png' className='w-full h-full rounded-full object-cover' />
+                                    <img src='/assets/Nav/person.png' className='w-full h-full rounded-full object-cover' />
                                 </div>
                                 <div className='px-7 py-20 rounded-t-3xl bg-neon-green flex items-center justify-center text-black text-5xl font-bold'>
                                     1
