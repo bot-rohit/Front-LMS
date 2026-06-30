@@ -25,15 +25,15 @@ const faqData = [
 const Frequently = () => {
     return (
         <>
-            <div className='flex gap-5 mx-20 pt-30 pb-20 font-heading px-[5vh] py-10 bg-black h-full'>
-                <div className='w-[40%] px-[5vh] flex flex-col gap-5'>
+            <div className='flex lg:flex-row flex-col gap-5 lg:mx-20 mx-4 lg:pt-30 lg:pb-20 font-heading lg:px-[5vh] py-10 bg-black h-full'>
+                <div className='lg:w-[40%] lg:px-[5vh] py-5 lg:py-0 flex flex-col gap-5'>
                     <p className='text-card-head text-3xl font-bold'>Frequently Asked Questions</p>
                     <p className=' text-card-font'>Find answers to common questions about how our
                         leaderboard and point system work.</p>
 
 
                 </div>
-                <div className='w-[60%] flex flex-col  gap-10'>
+                <div className='lg:w-[60%] flex flex-col  gap-10'>
 
 
                     <div className='bg-black flex flex-col gap-5'>

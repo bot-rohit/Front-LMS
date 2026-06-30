@@ -24,7 +24,7 @@ const leaderboardData = [
 const Leader = () => {
     return (
         <>
-            <div className='bg-[radial-gradient(circle_at_top,#1a2a00_0%,#040700_55%,#020400_100%)] lg:mx-20 lg:pb-10 mx-4 my-3'>
+            <div className='bg-[radial-gradient(circle_at_top,#1a2a00_0%,#040700_55%,#020400_100%)] lg:mx-20 lg:pb-10 px-4 my-3'>
                 <div className='font-heading gap-2 flex flex-col px-10 pt-10'>
                     <div className='flex gap-2 '>
                         <p className='text-red-given'>WHY LEADERBOARD</p>

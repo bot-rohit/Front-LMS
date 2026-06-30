@@ -39,7 +39,7 @@ const Learning = () => {
 
 
 
-        <div className=' bg-[#080C00] px-8 py-10 mx-20 mt-20 rounded-2xl pt-20'>
+        <div className='hidden lg:flex lg:flex-col bg-[#080C00] px-8 py-10 mx-20 mt-20 rounded-2xl pt-20 '>
             <div className='flex justify-between items-center text-[#C1CAAE] font-heading mx-2 '>
                 <div className='pb-15 '>
                     <p className='text-4xl font-bold mb-3'>Learning Paths</p>

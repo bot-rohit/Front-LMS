@@ -31,7 +31,7 @@ const Games = [
 
 const Fullgamified = () => {
     return (
-        <div className='flex flex-col w-full lg:px-20 lg:pt-20  lg:pb-10 mx-4 my-4'>
+        <div className='hidden lg:flex flex-col w-full lg:px-20 lg:pt-20  lg:pb-10 px-4 my-4'>
             <div className='flex justify-between items-center text-[#C1CAAE] font-heading mx-2  '>
                 <div className='pb-15 '>
                     <p className='text-4xl font-bold mb-3'>Gamified Mastery</p>

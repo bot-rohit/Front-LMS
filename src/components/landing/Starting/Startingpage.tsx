@@ -31,14 +31,14 @@ const Start = () => {
             <div className=' flex gap-10 lg:gap-20 px-4 sm:px-8 lg:px-20 pt-12 lg:pt-20'>
                 <div className='w-full lg:flex-1'>
 
-                    <div className='flex flex-col gap-5 pr-5 font-heading'>
+                    <div className='flex flex-col gap-5 lg:pr-5 font-heading'>
                         <div className='text-xs flex justify-star align-middle gap-1  items-center border-2 px-2 rounded-xl py-1 border-[#2A4100] bg-[#0A1600] w-fit'>
                             <i className="ri-circle-fill text-neon-green pb-0.5 "></i>
                             <p className='text-neon-green'>REFUNDABLE FEE MODEL</p>
                         </div>
 
                         <div className='flex flex-col gap-5'>
-                            <div className='flex flex-col items-start gap-1 font-bold text-6xl gap-2'>
+                            <div className='flex flex-col items-start text-5xl font-bold lg:text-6xl gap-2'>
                                 <p className='text-white'>Master the</p>
                                 <p className='text-white'>Markets with  </p>
                                 <p className='text-neon-green'>Interactive </p>

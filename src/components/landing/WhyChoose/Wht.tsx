@@ -49,7 +49,7 @@ const featuresData = [
 const Wht = () => {
     return (
         <>
-            <div className='  font-heading px-[5vw] py-10 flex flex-col gap-10 mx-20 pt-30 bg-black'>
+            <div className=' hidden font-heading px-[5vw] py-5 lg:flex lg:flex-col gap-10 mx-10 lg:pt-30 pt-20 bg-black'>
                 <div className='flex flex-col gap-5 '>
                     <div className='text-xs'>
                         <p className='text-neon-green'>ENGINEERED FOR SUCCESS</p>
