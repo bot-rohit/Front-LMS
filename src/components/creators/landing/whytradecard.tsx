@@ -5,6 +5,8 @@ type data = {
   title: string,
   description: string,
   icon: string
+  iconColor:string,
+  iconBg:string,
 }
 type coming = {
   sending: data
