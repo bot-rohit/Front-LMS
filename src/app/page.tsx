@@ -39,19 +39,19 @@ const page = () => {
 
       <Starting />
       <Right />
-      {/* <Fullgamified />
+      <Fullgamified />
       <Leader />
-      <Learning />
-      <Zero />
-      <Refund />
-      <Why />
-      <Community />
-      <Frequently />
+      {/* <Learning /> */}
+      {/* <Zero /> */}
+      {/* <Refund /> */}
+      {/* <Why /> */}
+      {/* <Community /> */}
+      {/* <Frequently /> */}
       <div className=' p-20'>
-        <Start />
+        {/* <Start /> */}
 
       </div>
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

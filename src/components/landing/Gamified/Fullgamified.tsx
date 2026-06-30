@@ -31,7 +31,7 @@ const Games = [
 
 const Fullgamified = () => {
     return (
-        <div className='flex flex-col w-full px-20 pt-20 pb-10'>
+        <div className='flex flex-col w-full lg:px-20 lg:pt-20  lg:pb-10 mx-4 my-4'>
             <div className='flex justify-between items-center text-[#C1CAAE] font-heading mx-2  '>
                 <div className='pb-15 '>
                     <p className='text-4xl font-bold mb-3'>Gamified Mastery</p>
@@ -49,7 +49,7 @@ const Fullgamified = () => {
 
 
             </div>
-            <div className='flex w-auto mx-3 pb-10 gap-5 '>
+            <div className='flex lg:flex-row flex-col  w-auto mx-3 pb-10 lg:gap-5 gap-2 '>
                 {Games.map((element) => (
                     <div key={element.id} className='flex-1'>
                         <Card data={element} />
