@@ -95,7 +95,7 @@ const Start = () => {
 
                         <Streak/>
                     </div>
-                    <div className='absolute z-4 left-0 bottom-0 backdrop-blur-xl   scale-75 origin-top-right  '>
+                    <div className='absolute z-4 lg:left-0 bottom-0   backdrop-blur-xl   scale-75 lg:origin-top-right  '>
                         <Leaderboard/>
                     </div>
                 </div>

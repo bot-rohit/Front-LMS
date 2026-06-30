@@ -33,7 +33,7 @@ const Review = [
 const CommunityVoices = () => {
     return (
         <>
-            <div className='flex flex-col items-center font-heading gap-10 lg:py-10 mt-50  lg:px-5 lg:mx-20 px-4 bg-[#080C00] pt-20 lg:mt-20 pb-20 '>
+            <div className='flex flex-col items-center font-heading gap-10 lg:py-10 mt-80 lg:px-5 lg:mx-20 px-4 bg-[#080C00] pt-20 lg:mt-20 pb-20 '>
                 <div className='text-card-head bold text-4xl font-bold'>Community Voices</div>
                 <div className='flex lg:flex-row flex-col gap-5 w-full'>
                     {Review.map((element) => (

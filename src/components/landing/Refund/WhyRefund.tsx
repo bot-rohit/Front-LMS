@@ -35,8 +35,8 @@ const featuresData = [
 const WhyRefund = () => {
     return (
         <>
-            <div className='flex py-20 lg:px-10  font-heading lg:mx-20 px-4 lg:bg-[#080C00] '>
-                <div className='lg:w-[50%]'>
+            <div className='flex py-20 lg:px-10  font-heading lg:mx-20 px-4 lg:bg-[#080C00] justify-center'>
+                <div className='lg:w-[50%] '>
 
                     <div className='flex flex-col gap-5 pr-5'>
                         <div className='text-xs'>

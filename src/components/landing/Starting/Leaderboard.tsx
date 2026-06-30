@@ -3,7 +3,7 @@ import React from 'react'
 const Leaderboard = () => {
     return (
         <div>
-            <div className="w-full rounded-2xl border bg-transparent border-lime-500/10 p-5">
+            <div className="hidden min-[1200px]:flex lg:flex-col rounded-2xl border border-lime-500/10 bg-transparent p-5">
 
 
                 <div className="absolute inset-0 " />

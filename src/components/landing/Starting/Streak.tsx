@@ -3,7 +3,7 @@ import React from 'react'
 const Streak = () => {
     return (
         <div>
-            <div className=" px-10 py-7 rounded-2xl border border-lime-500/10 ">
+            <div className=" px-10 py-7 rounded-2xl border border-lime-500/10  hidden min-[1300px]:flex lg:flex-col">
 
                 <div className=" flex flex-col items-center justify-center h-full gap-2">
 
