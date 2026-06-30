@@ -3,14 +3,11 @@ import Image from 'next/image'
 const mobile = () => {
     return (
         <div>
-            <div className="min-h-screen bg-black relative overflow-hidden w-full  flex items-center justify-center px-6 font-heading">
+            <div className="min-h-screen bg-black relative overflow-hidden w-full  flex items-center justify-center px-3 font-heading">
 
 
-                <div className="absolute inset-3  bg-neon-green/20 blur-3xl opacity-40 group-hover:opacity-70 transition-all duration-500" />
-
-
-           
-                <div className="relative z-10 max-w-lg w-full border border-card-page rounded-3xl bg-[#0B0B0B]/90 backdrop-blur-xl p-8 text-center">
+                <div className="absolute inset-3 2-full  bg-neon-green/20 blur-3xl opacity-40 group-hover:opacity-70 transition-all duration-500" />
+                <div className="relative z-10 max-w-lg w-full ge rounded-3xl bg-[#0B0B0B]/90 backdrop-blur-xl  text-center">
 
                     <Image
                         src="/assets/Nav/download.jpeg"
