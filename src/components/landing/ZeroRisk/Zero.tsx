@@ -72,11 +72,11 @@ const Zero = () => {
 
                 <div className='flex justify-center relative '>
 
-                    <Image src={'/assets/Landing/trading.png'} alt='img' height={200} width={200}
+                    <Image src={'/assets/Landing/Trading.png'} alt='img' height={100} width={200}
                         className=' 
                     border-2 border-card-page rounded-2xl w-xl p-5 object-cover opacity-40 '/>
                     <div className='shadow-[0_0_80px_#A6FF00]
-                     absolute z-2 lg:mt-30 mt-18 pl-2.5 pr-2  py-2 rounded-full bg-neon-green flex justify-center align-middle items-center'>
+                     absolute z-2 lg:mt-30 mt-23 pl-2.5 pr-2  py-2 rounded-full bg-neon-green flex justify-center align-middle items-center'>
                         <i className="bi bi-play-fill text-black text-5xl "></i>
 
                     </div>

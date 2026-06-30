@@ -25,7 +25,7 @@ const Leader = () => {
     return (
         <>
             <div className='bg-[radial-gradient(circle_at_top,#1a2a00_0%,#040700_55%,#020400_100%)] lg:mx-20 lg:pb-10 px-4 my-3'>
-                <div className='font-heading gap-2 flex flex-col px-10 pt-10'>
+                <div className='font-heading gap-2 flex flex-col lg:px-10 px-4 pt-10'>
                     <div className='flex gap-2 '>
                         <p className='text-red-given'>WHY LEADERBOARD</p>
                         <i className="ri-arrow-right-line text-red-given"></i>
@@ -59,7 +59,7 @@ const Leader = () => {
                             </div>
                             <div className='flex flex-col items-center gap-3'>
                                 <div className='rounded-full border-4 border-neon-green p-1 size-18'>
-                                    <img src='/assets/nav/person.png' className='w-full h-full rounded-full object-cover' />
+                                    <img src='/assets/Nav/person.png' className='w-full h-full rounded-full object-cover' />
                                 </div>
                                 <div className='px-7 py-8 rounded-t-3xl bg-[#2D3128] flex items-center justify-center text-white text-4xl font-bold'>
                                     3
