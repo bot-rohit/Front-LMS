@@ -81,7 +81,7 @@ const countine = () => {
                             </div>
                         </div>
                         <div className='relative'>
-                            <p className='absolute z-1 text-red-given font-bold -top-10'>Clickable</p>
+                            <p className='absolute z-1 text-red-given font-bold top-15 left-5'>Clickable</p>
 
                             <Link href={"/courseOverview"} className="rounded-xl whitespace-nowrap bg-neon-green px-6 py-3 text-md font-semibold text-black transition hover:scale-[1.02]">
                                 Continue <span>Module</span>

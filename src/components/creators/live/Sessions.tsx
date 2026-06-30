@@ -22,8 +22,8 @@ const sessions = [
 const Sessions = () => {
     const category = 1;
     return (
-        <div>
-            <div className="flex items-center justify-between rounded-3xl border border-white/5 bg-[#060806] p-6 mx-20 font-heading">
+        <div className='flex flex-col gap-10 pt-10'>
+            <div className="flex items-center justify-between gap-10 rounded-3xl border border-white/5 bg-[#060806] p-6 mx-20 font-heading">
 
                 <div>
                     <h2 className="text-3xl font-semibold text-white">
