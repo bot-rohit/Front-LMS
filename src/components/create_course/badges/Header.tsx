@@ -25,7 +25,7 @@ const Header = () => {
         <div className=' pt-5 pb-15 px-10'>
             <div className="pt-10  font-heading">
 
-                <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center justify-between mb-8 relative">
                     <div>
                         <h1 className="text-4xl font-semibold text-white">
                             Badge Management
@@ -34,6 +34,7 @@ const Header = () => {
                             Gamify your students&apos; learning journey with custom achievements.
                         </p>
                     </div>
+                                   <p className='absolute z-1 text-red-given font-bold -top-6 right-1'>Clickable</p>
 
                     <Link href={'/creators/pricing'} 
                     className="flex items-center gap-2 rounded-2xl bg-neon-green px-6 py-2 text-black font-medium shadow-[0_0_30px_rgba(163,255,0,0.35)] transition-all hover:scale-105">

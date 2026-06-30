@@ -7,7 +7,7 @@ import Progress3 from './progress3';
 import { useEffect } from 'react';
 import gsap from "gsap";
 import { useRef } from 'react';
-
+import { useRouter } from 'next/navigation';
 const details = [
     {
         id: 1,
@@ -28,10 +28,18 @@ const details = [
 
 
 const setup = () => {
+
     const [currentStep, setCurrentStep] = useState(1);
     const [progress, setProgress] = useState(34);
     const barRef = useRef<HTMLDivElement>(null);
     const [step, setStep] = useState(0);
+    const router = useRouter();
+
+    useEffect(() => {
+        if (currentStep === 4) {
+            router.push('/creators/profile');
+        }
+    }, [currentStep, router]);
 
     useEffect(() => {
         gsap.to(barRef.current, {
@@ -44,6 +52,7 @@ const setup = () => {
         <Progress1 key="1" />,
         <Progress2 key="2" />,
         <Progress3 key="3" />,
+        <Progress3 key="4" />,
     ];
 
 
@@ -130,8 +139,8 @@ const setup = () => {
                         <button
                             onClick={() => {
                                 setProgress((prev) => Math.max(prev - 33, 34));
-                                setStep((prev) => Math.max(prev -1, 0));
-                                setCurrentStep((prev) => Math.max(prev -1, 1))
+                                setStep((prev) => Math.max(prev - 1, 0));
+                                setCurrentStep((prev) => Math.max(prev - 1, 1))
                             }}
 
                             className="text-zinc-400 transition hover:text-white">

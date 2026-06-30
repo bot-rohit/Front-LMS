@@ -55,11 +55,14 @@ const header = () => {
                         </p>
 
 
-                        <div className="mt-8 flex gap-4 font-heading">
+                        <div className="mt-8 flex gap-4 font-heading relative">
                             <button className="rounded-xl bg-red-given px-8 py-3 text-md font-semibold
                              text-white transition hover:scale-[1.02] font-sans">
                                 Enroll Now — {courseDetails.price}
                             </button>
+
+                            <p className='absolute z-1 left-60 text-neon-green font-bold -top-8'>Clickable</p>  
+
 
                             <Link href={'/vidTerminal'} className="rounded-xl border border-white/20 bg-white/10 px-8 py-3 
                             text-md font-semibold text-white backdrop-blur-sm">

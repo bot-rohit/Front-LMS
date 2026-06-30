@@ -202,7 +202,7 @@ const Left = ({ formdata, handle, submit, error, accept, load }: coming) => {
                             </p>
                         </div>}
 
-                        <button type='submit'
+                        {/* <button type='submit'
                             disabled={load}
                             className={`mt-2 py-2 rounded-xl bg-[#A6FF00] text-black text-xl font-medium hover:scale-[1.01]
                                 ${load
@@ -211,7 +211,13 @@ const Left = ({ formdata, handle, submit, error, accept, load }: coming) => {
                                 }
                              transition-all`}>
                             {load ? "Creating Account..." : "Create My Account"}
-                        </button>
+                        </button> */}
+                        <Link href={'/login'} className={`mt-2 py-2 rounded-xl flex justify-center bg-[#A6FF00] text-black text-xl font-medium hover:scale-[1.01]
+                                ${load
+                                ? "bg-gray-500 cursor-not-allowed"
+                                : "bg-[#A6FF00] hover:scale-[1.01]"
+                            }   transition-all`}> Create My Account
+                        </Link>
 
                         {/* login */}
                         <p className="text-center text-card-font text-md">
@@ -231,7 +237,7 @@ const Left = ({ formdata, handle, submit, error, accept, load }: coming) => {
 
             </form>
 
-            
+
         </div>
     )
 }

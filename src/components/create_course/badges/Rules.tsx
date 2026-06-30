@@ -48,7 +48,8 @@ const badges = [
 ];
 const Rules = () => {
     return (
-        <div className='mr-10 w-auto mb-10'>
+        <div className='mr-10 w-auto mb-10 relative'>
+            <p className='absolute z-1 right-5 text-red-given font-bold -top-6'>Clickable</p>
             <div className="font-heading">
                 <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#11150E]">
                     <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
@@ -148,8 +149,8 @@ const Rules = () => {
 
                                     <span
                                         className={`rounded-md px-3 py-1 text-[10px] font-semibold ${badge.rarity === "LEGENDARY"
-                                                ? "bg-neon-green/10 text-neon-green"
-                                                : "bg-white/10 text-white/60"
+                                            ? "bg-neon-green/10 text-neon-green"
+                                            : "bg-white/10 text-white/60"
                                             }`}
                                     >
                                         {badge.rarity}
@@ -173,7 +174,7 @@ const Rules = () => {
                             </div>
                         ))}
 
-              
+
 
                         <button className="flex min-h-[250px] flex-col items-center justify-center rounded-3xl border border-dashed border-white/20 bg-[#11150E] transition-all hover:border-neon-green hover:bg-neon-green/5">
 

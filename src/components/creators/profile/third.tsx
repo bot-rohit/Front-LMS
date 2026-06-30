@@ -126,8 +126,11 @@ const third = () => {
                     ))}
                 </div>
 
+
+
                 {/* Bottom Banner */}
-                <div className="mt-6 rounded-2xl border border-[#A6FF00]/30 bg-[#122000] py-6 text-center">
+                <div className="mt-6 rounded-2xl relative border border-[#A6FF00]/30 bg-[#122000] py-6 text-center">
+                    <p className='absolute z-1 text-red-given font-bold -top-6'>Clickable</p>
                     <Link href={'/creators/landing'} >
                         <h3 className="text-[#A6FF00] font-semibold">
                             We'll notify you via email

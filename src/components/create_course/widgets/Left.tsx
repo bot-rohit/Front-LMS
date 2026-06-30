@@ -101,7 +101,9 @@ const Left = () => {
 
             </div>
             <Link href={'/creators/badge'} className="">
-                <div className="flex items-center justify-between text-xs">
+                <div className="flex items-center relative justify-between text-xs">
+                      <p className='absolute z-1 text-red-given font-bold -top-6'>Clickable</p>
+
                     <span className="text-white/40">
                         Total XP Reward:
                     </span>

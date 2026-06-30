@@ -56,20 +56,20 @@ const SideBar = () => {
             href: "/games",
         },
 
-        {
-            name: "Quizzes",
-            text: "Quizzes",
-            url_icon: "ri-questionnaire-line",
-            disabled: false,
-            href: "#",
-        },
-        {
-            name: "Settings",
-            text: "Settings",
-            url_icon: "ri-settings-3-line",
-            disabled: false,
-            href: "#",
-        },
+        // {
+        //     name: "Quizzes",
+        //     text: "Quizzes",
+        //     url_icon: "ri-questionnaire-line",
+        //     disabled: false,
+        //     href: "#",
+        // },
+        // {
+        //     name: "Settings",
+        //     text: "Settings",
+        //     url_icon: "ri-settings-3-line",
+        //     disabled: false,
+        //     href: "#",
+        // },
         {
             name: "Creator",
             text: "Creator",

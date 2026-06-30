@@ -12,15 +12,15 @@ const Sidebar = () => {
             text: "Dashboard",
             url_icon: "ri-dashboard-line",
             disabled: false,
-            href: "1#",
+            href: "/creators/dashboard",
         },
-        {
-            name: "Courses Library",
-            text: "Courses Library",
-            url_icon: "ri-book-open-line",
-            disabled: false,
-            href: "/creators/courses",
-        },
+        // {
+        //     name: "Courses Library",
+        //     text: "Courses Library",
+        //     url_icon: "ri-book-open-line",
+        //     disabled: false,
+        //     href: "/creators/dashboard",
+        // },
         {
             name: "All Students",
             text: "All Students",
@@ -28,20 +28,20 @@ const Sidebar = () => {
             disabled: false,
             href: "/creators/students",
         },
-        {
-            name: "Assignments",
-            text: "Assignments",
-            url_icon: "ri-file-list-3-line",
-            disabled: false,
-            href: "/creators/assignments",
-        },
-        {
-            name: "Leaderboard",
-            text: "Leaderboard",
-            url_icon: "ri-bar-chart-grouped-line",
-            disabled: false,
-            href: "/creators/leaderboard",
-        },
+        // {
+        //     name: "Assignments",
+        //     text: "Assignments",
+        //     url_icon: "ri-file-list-3-line",
+        //     disabled: false,
+        //     href: "/creators/assignments",
+        // },
+        // {
+        //     name: "Leaderboard",
+        //     text: "Leaderboard",
+        //     url_icon: "ri-bar-chart-grouped-line",
+        //     disabled: false,
+        //     href: "/creators/leaderboard",
+        // },
         {
             name: "Live Session",
             text: "Live Session",
@@ -49,27 +49,27 @@ const Sidebar = () => {
             disabled: false,
             href: "/creators/live",
         },
-        {
-            name: "Games",
-            text: "Games",
-            url_icon: "ri-puzzle-line",
-            disabled: false,
-            href: "/creators/games",
-        },
-        {
-            name: "Quizzes",
-            text: "Quizzes",
-            url_icon: "ri-questionnaire-line",
-            disabled: false,
-            href: "/creators/quizzes",
-        },
-        {
-            name: "Badges",
-            text: "Badges",
-            url_icon: "ri-award-line",
-            disabled: false,
-            href: "/creators/badges",
-        },
+        // {
+        //     name: "Games",
+        //     text: "Games",
+        //     url_icon: "ri-puzzle-line",
+        //     disabled: false,
+        //     href: "/creators/games",
+        // },
+        // {
+        //     name: "Quizzes",
+        //     text: "Quizzes",
+        //     url_icon: "ri-questionnaire-line",
+        //     disabled: false,
+        //     href: "/creators/quizzes",
+        // },
+        // {
+        //     name: "Badges",
+        //     text: "Badges",
+        //     url_icon: "ri-award-line",
+        //     disabled: false,
+        //     href: "/creators/badges",
+        // },
         {
             name: "Balance",
             text: "Balance",
@@ -77,13 +77,13 @@ const Sidebar = () => {
             disabled: false,
             href: "/creators/balance",
         },
-        {
-            name: "Settings",
-            text: "Settings",
-            url_icon: "ri-settings-3-line",
-            disabled: false,
-            href: "/creators/settings",
-        },
+        // {
+        //     name: "Settings",
+        //     text: "Settings",
+        //     url_icon: "ri-settings-3-line",
+        //     disabled: false,
+        //     href: "/creators/settings",
+        // },
     ];
     const pathname = usePathname();
 
@@ -105,7 +105,7 @@ const Sidebar = () => {
                             {!element.disabled && (
                                 <div className={` py-1 flex flex-col justify-center items-start font-sans text-xs
                                     transition-all duration-200 
-                                ${element.href === "1#" ?
+                                ${element.href === "/creators/dashboard" ?
                                         " text-neon-green bg-[#2A3615] w-55  m-auto rounded-md border-1  " : "text-gray-400"}
                                 `}>
                                     <Link href={element.href} className='items-center gap-2 flex ml-5  '>

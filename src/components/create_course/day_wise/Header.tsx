@@ -56,7 +56,9 @@ const Header = () => {
         }
     };
     return (
-        <div className="mx-20 mt-10 font-heading">
+        <div className="mx-20 mt-10 font-heading relative">
+              <p className='absolute z-1 text-red-given font-bold -top-6'>go in xp for next</p>
+
 
             {/* Header */}
 

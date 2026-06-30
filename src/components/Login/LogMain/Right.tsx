@@ -150,7 +150,7 @@ const Right = ({ data, change, submit, load, error }: coming) => {
                         </div>
 
 
-                        <button type="submit"
+                        {/* <button type="submit"
                             disabled={load}
                             className={`mt-10 w-full p-4 rounded-xl 
                         bg-neon-green text-black text-md font-semibold flex items-center    
@@ -162,7 +162,10 @@ const Right = ({ data, change, submit, load, error }: coming) => {
                             {load ? "Logging In " : "Login To Account"}
                             <i className="ri-arrow-right-line text-md"></i>
 
-                        </button>
+                        </button> */}
+                        <Link href={'/dashboard'} className='mt-10 w-full p-4 rounded-xl flex justify-center
+                        bg-neon-green text-black text-md font-semibold gap-2 items-center'>Login To Account
+                            <i className="ri-arrow-right-line text-md"></i></Link>
 
                     </form>
                     <p className="mt-10 text-center text-zinc-500 text-md">

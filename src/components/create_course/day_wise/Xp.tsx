@@ -79,7 +79,9 @@ const Xp = () => {
                     </p>
 
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center relative gap-4">
+                      <p className='absolute z-1 text-red-given font-bold -top-6 right-5'>Clickable</p>
+        
 
                     <button
                         className="
@@ -108,6 +110,7 @@ const Xp = () => {
                     >
                         Publish Policy
                     </Link>
+                    
 
                 </div>
 
