@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
+import Link from 'next/link'
 
 type DashboardProps = {
     dashboard: string
@@ -20,11 +21,11 @@ const Commondash = ({ dashboard }: DashboardProps) => {
                 </div>
                 <div className='hidden md:flex font-sans text-sm font-medium justify-center items-center gap-5
          text-gray-300 bg-trasparent '>
-                    <p>Dashboard</p>
-                    <p>Courses</p>
-                    <p>Assignments</p>
+                    <Link href={'/dashboard'}>Dashboard</Link>
+                    <Link href={'/courseLib'}>Courses</Link>
+                    <Link href={'assignments'}>Assignments</Link>
                     <p>Quizzes</p>
-                    <p>Referrals</p>
+                    <Link href={'/referals'}>Referrals</Link>
 
                 </div>
 

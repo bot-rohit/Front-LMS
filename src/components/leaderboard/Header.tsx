@@ -1,4 +1,8 @@
+'use client'
 import React from 'react'
+import Link from 'next/link';
+import { useRef } from "react";
+import Board from './Board';
 
 
 const Header = () => {
@@ -28,6 +32,7 @@ const Header = () => {
                 "Earn exponentially more points and exclusive badges for regular learning sessions.",
         },
     ];
+    const rankingsRef = useRef<HTMLDivElement | null>(null);
     return (
         <div className='mx-10 my-10 font-heading'>
             <div className="w-full">
@@ -43,14 +48,21 @@ const Header = () => {
                         </p>
 
                         <div className="mt-10 flex gap-5">
-                            <button className="flex items-center gap-2 rounded-xl bg-lime-400 px-8 py-3 font-semibold text-black transition hover:bg-lime-300">
+                            <button
+                                onClick={() =>
+                                    window.scrollBy({
+                                        top: 1700, // Scroll down 800px
+                                        behavior: "smooth",
+                                    })
+                                }
+                                className="flex items-center gap-2 rounded-xl bg-lime-400 px-8 py-3 font-semibold text-black transition hover:bg-lime-300">
                                 View Rankings
                                 <i className="ri-arrow-right-up-line text-lg"></i>
                             </button>
 
-                            <button className="rounded-xl bg-zinc-200 px-8 py-3 font-semibold text-black transition hover:bg-white">
+                            <Link href={'/dashboard'} className="rounded-xl bg-zinc-200 px-8 py-3 font-semibold text-black transition hover:bg-white">
                                 Continue Learning
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -62,7 +74,7 @@ const Header = () => {
                             Why Leaderboard?
                         </h2>
 
-                    
+
                     </div>
 
                     <div className="grid grid-cols-4 gap-6">
@@ -88,6 +100,7 @@ const Header = () => {
                         ))}
                     </div>
                 </section>
+
             </div>
 
         </div>

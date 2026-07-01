@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React from 'react'
 const unlockItems = [
     {
@@ -285,13 +286,13 @@ const Reedem = () => {
                     ))}
                 </div>
 
-                <div className="mt-8 flex justify-end">
+                <Link href={'/gifts'} className="mt-8 flex justify-end">
                     <button className="flex items-center gap-3 rounded-2xl bg-lime-400 px-8 py-2 font-semibold text-black transition hover:bg-lime-300">
                         <i className="ri-gift-line text-xl"></i>
 
                         Buy More and Gift
                     </button>
-                </div>
+                </Link>
             </section>
 
             <section className="rounded-2xl border border-[#28311F] bg-[#10170A] p-8 mt-10">
@@ -301,7 +302,7 @@ const Reedem = () => {
                     How to Earn More Credits
                 </h2>
 
-                {/* Cards */}
+   
 
                 <div className="grid grid-cols-4 gap-5">
                     {earnCredits.map((item) => (

@@ -93,10 +93,10 @@ const SideBar = () => {
         <>
             <div className=' pl-2 pr-4 h-auto flex flex-col bg-[#151B0A] ml-10 items-start '>
 
-                <div className='flex justify-center gap-3 font-heading text-md font-semibold items-center mt-5 mb-3 ml-5'>
+                <Link href={'/'} className='flex justify-center gap-3 font-heading text-md font-semibold items-center mt-5 mb-3 ml-5'>
                     <Image src="/assets/Nav/logo.png" alt="logo" width={20} height={15} />
                     <p className='text-white'>TradeVed</p>
-                </div>
+                </Link>
 
                 <div className=' mt-5 flex flex-col gap-2 w-full '>
 

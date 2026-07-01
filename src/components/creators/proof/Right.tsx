@@ -235,7 +235,7 @@ const Right = () => {
 
             <div className="mt-10 border-t border-zinc-800 pt-6">
                 <div className="flex items-center justify-between">
-                    <Link href={''} className="text-card-font transition hover:text-white">
+                    <Link href={'/creators'} className="text-card-font transition hover:text-white">
                         Save & continue later
                     </Link>
 

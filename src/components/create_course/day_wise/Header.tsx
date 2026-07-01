@@ -142,10 +142,13 @@ const Header = () => {
                 })}
 
             </div>
+            <div className='mb-10'>
+
 
             {/* Dynamic Component */}
 
             {renderComponent()}
+            </div>
 
         </div>
     )

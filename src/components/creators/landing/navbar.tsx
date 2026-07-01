@@ -8,11 +8,11 @@ const navbar = () => {
 
             <div className='flex justify-around w-auto  bg-black min-h-10 my-3 p-0.5'  >
 
-                <div className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
+                <Link href={'/'} className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
                     <Image src="/assets/Nav/logo.png" alt="logo" width={30} height={25} />
                     <p className='text-white'>TradeVed</p>
 
-                </div>
+                </Link>
                 <div className='hidden md:flex font-sans text-sm font-medium justify-center items-center gap-5
               text-gray-300 bg-trasparent '>
                     <p>Benefits</p>

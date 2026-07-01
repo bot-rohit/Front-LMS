@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link';
 import {
     ResponsiveContainer,
     LineChart,
@@ -168,7 +169,9 @@ const graph_two = () => {
                         transition hover:bg-neon-green/10
                     "
                 >
+                    <Link href="/creators/students" className="w-full h-full flex justify-center items-center">
                     Send Encouragement
+                    </Link>
                 </button>
 
             </div>

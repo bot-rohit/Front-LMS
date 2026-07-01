@@ -1,23 +1,29 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
+import { useRouter } from "next/navigation";
+
 const Navbar = () => {
+    const router = useRouter();
     return (
         <>
 
             <div className='flex justify-between w-auto  bg-black min-h-10 my-3 p-0.5 px-20  py-2'  >
 
-                <div className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
+                <Link href={'/creators'} className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
                     <Image src="/assets/Nav/logo.png" alt="logo" width={30} height={25} />
                     <p className='text-white'>TradeVed</p>
 
-                </div>
+                </Link>
 
 
                 <div className='hidden min-[900]:flex bg-transparent font-sans font-medium text-sm justify-center items-center gap-5 '>
-                    <button className='bg-transparent text-white py-2 px-10  font-semibold  flex gap-2
+                    <button onClick={() => router.back()}
+
+                        className='bg-transparent text-white py-2 px-10  font-semibold  flex gap-2
                    '>
                         <i className="ri-arrow-left-line text-md"></i>
                         Back

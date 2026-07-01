@@ -14,19 +14,18 @@ const Navbar = () => {
                 <div className='flex justify-between  bg-black min-h-10 my-5 p-0.5 px-3 lg:px-20  py-2 lg:py-5'>
 
 
-                    <div className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
+                    <Link href={'/'} className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
                         <Image src="/assets/Nav/logo.png" alt="logo" width={35} height={20} />
                         <p className='text-white'>TradeVed</p>
 
-                    </div>
+                    </Link>
                     <div className='hidden md:flex font-sans text-sm font-medium justify-center items-center gap-5
         text-gray-300 bg-trasparent '>
-                        <p>Dashboard</p>
+                        <Link href={'/dashboard'}>Dashboard</Link>
                         <Link href={'/allCourses'}>Courses</Link>
-                        <p>Assignments</p>
+                        <Link href={'assignments'}>Assignments</Link>
                         <p>Quizzes</p>
-                        <p>Referrals</p>
-
+                        <Link href={'/referals'}>Referrals</Link>
                     </div>
 
                     <div className='hidden min-[900]:flex bg-transparent font-sans font-medium text-sm justify-center items-center gap-5 '>

@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Link from 'next/link';
 const revenueData = [
     { day: "Mon", revenue: 12000 },
     { day: "Tue", revenue: 18000 },
@@ -149,7 +150,9 @@ const a = () => {
                 transition hover:bg-neon-green/10
             "
                     >
+                        <Link href="/creators/live" className="w-full h-full flex justify-center items-center"> 
                         Schedule New Session
+                        </Link>
                     </button>
 
                 </div>

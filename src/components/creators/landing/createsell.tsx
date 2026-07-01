@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const createsell = () => {
     return (
@@ -26,14 +27,14 @@ const createsell = () => {
                     </p>
 
                     <div className="mt-5 flex items-center gap-4">
-                        <button
+                        <Link
                             className="px-6 py-3 rounded-2xl bg-neon-green text-black
                      font-bold flex items-center gap-2
-                     hover:bg-neon-green/80 transition-all duration-200"
+                     hover:bg-neon-green/80 transition-all duration-200"  href={'/creators/account_setup'}
                         >
                             Become a Creator
                             <i className="bi bi-arrow-right"></i>
-                        </button>
+                        </Link>
 
                         <button
                             className="px-6 py-3 rounded-2xl bg-zinc-900 border

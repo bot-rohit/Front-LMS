@@ -8,13 +8,13 @@ const Nav = () => {
 
             <div className='flex justify-between w-auto  bg-black min-h-10 my-3 p-0.5 mx-20 py-2'  >
 
-                <div className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
+                <Link href={'/creators'} className='flex  justify-center items-center gap-2 font-heading text-xl font-bold '>
                     <Image src="/assets/Nav/logo.png" alt="logo" width={30} height={25} />
                     <p className='text-white'>TradeVed</p>
                     <div className='w-0.5 h-7 mx-5 bg-white' />
                     <p className='text-white'>Creator</p>
 
-                </div>
+                </Link>
 
 
                 <div className="hidden min-[900px]:flex items-center gap-8 font-heading">

@@ -220,7 +220,7 @@ const Left = ({ formdata, handle, submit, error, accept, load }: coming) => {
                         </Link>
 
                         {/* login */}
-                        <p className="text-center text-card-font text-md">
+                        <p className="text-center text-card-font text-md lg:mb-0 mb-10">
 
                             Already have an account?{" "}
                             <Link href="/login ">

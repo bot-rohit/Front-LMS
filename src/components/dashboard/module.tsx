@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const module = () => {
@@ -57,10 +58,10 @@ const module = () => {
                     </div>
 
 
-                    <button className="mt-8 w-full rounded-2xl bg-[#30352A] py-3 text-md font-semibold text-[#F2F2EA] 
+                    <Link href={'/vidTerminal'} className="mt-8 w-auto  flex justify-center rounded-2xl bg-[#30352A] py-3 text-md font-semibold text-[#F2F2EA] 
                     transition hover:bg-[#393F33]">
                         Continue Lesson
-                    </button>
+                    </Link>
                 </div>
             </div>
 

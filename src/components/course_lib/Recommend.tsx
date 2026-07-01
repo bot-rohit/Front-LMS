@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link';
 const featuredCourse = {
   image:
     "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&auto=format&fit=crop",
@@ -74,9 +74,9 @@ const recomment = () => {
                 {featuredCourse.description}
               </p>
               <div className="mt-10 flex flex-col gap-4">
-                <button className="w-fit rounded-2xl bg-neon-green px-13 py-3 font-semibold text-black transition hover:scale-[1.02]">
+                <Link href={'/courseOverview'} className="w-fit rounded-2xl bg-neon-green px-13 py-3 font-semibold text-black transition hover:scale-[1.02]">
                   Start Learning
-                </button>
+                </Link>
 
                 <button className="w-fit rounded-2xl border border-[#2A2A2A] px-8 py-3 font-semibold text-white transition hover:bg-white/5">
                   View Course Details

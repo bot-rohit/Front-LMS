@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 const footer = () => {
   return (
     <>
@@ -14,11 +14,11 @@ const footer = () => {
             Apply in under 5 minutes. Most creators are approved within 24 hours.
           </p>
 
-          <button className="mt-8 bg-lime-400 text-black font-semibold
+          <Link href={'/creators/account_setup'} className="mt-8 bg-lime-400 text-black font-semibold
            px-8 py-4 rounded-xl flex items-center gap-2 shadow-[0_0_30px_rgba(163,230,53,0.35)] hover:scale-105 transition-all">
             Become a Creator
             <i className="ri-arrow-right-line"></i>
-          </button>
+          </Link>
         </div>
         <div className='flex flex-col align-middle items-center  gap-10 '>
           <div className='bg-card-page h-[0.1px] w-full'/>
