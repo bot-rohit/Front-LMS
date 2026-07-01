@@ -5,6 +5,7 @@ import Notes from './Notes';
 import Assign from './Assign';
 import Quiz from './Quiz';
 import Xp from './Xp';
+import Link from 'next/link';
 const tabs = [
     {
         id: "video",
@@ -57,7 +58,7 @@ const Header = () => {
     };
     return (
         <div className="mx-20 mt-10 font-heading relative">
-              <p className='absolute z-1 text-red-given font-bold -top-6'>go in xp for next</p>
+            <p className='absolute z-1 text-red-given font-bold -top-6'>go in xp for next</p>
 
 
             {/* Header */}
@@ -145,9 +146,30 @@ const Header = () => {
             <div className='mb-10'>
 
 
-            {/* Dynamic Component */}
 
-            {renderComponent()}
+
+                {renderComponent()}
+            </div>
+            <div className="mt-12 flex items-center justify-between border-t border-white/10 pt-6 pb-10">
+  
+                <Link href={'/creators/basic'}
+                    className="flex items-center gap-2 rounded-2xl border border-white/15
+    px-8 py-2 text-md font-semibold text-white
+    transition-all duration-300 hover:border-lime-400 hover:text-lime-400"
+                >
+                    <i className="ri-arrow-left-line text-md"></i>
+                    Back
+                </Link>
+
+
+                <Link href={'/creators/widgets'}
+                    className="flex items-center gap-2 rounded-2xl bg-lime-400
+    px-10 py-2 text-md font-semibold text-black
+    transition-all duration-300 hover:bg-lime-300"
+                >
+                    Continue
+                    <i className="ri-arrow-right-line text-md"></i>
+                </Link>
             </div>
 
         </div>

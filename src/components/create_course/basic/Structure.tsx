@@ -202,7 +202,7 @@ const Structure = () => {
                                 
                 <div className="flex items-center justify-between border-t border-zinc-800 mt-15 pb-10 pt-6">
 
-                    <button
+                    <Link href={'/creators/dashboard'}
                         className="
                 rounded-2xl border border-zinc-800
                 px-6 py-3 text-card-font
@@ -210,7 +210,7 @@ const Structure = () => {
             "
                     >
                         Back
-                    </button>
+                    </Link>
 
                     <Link href={'/creators/day_wise'}
                         className="
